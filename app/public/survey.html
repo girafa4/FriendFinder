@@ -10,6 +10,11 @@
 </head>
 <body>
     <div id=“questions”>
+
+        <!-- <form method="POST" action="/newfriend">
+            <input type="text" name="firstname">
+            <input type="submit" name="submit">
+        </form> -->
         
     <div class='container'>
         <div class='card-panel yellow darken-1 col s12 center-align'>
@@ -17,13 +22,15 @@
             <div class='card-panel left-align white'>
                 <h5><strong>About You</strong></h5>
                 <br>
-                <input id="name" type="text" class="validate" required>
+
+            <form method="POST" action="/newfriend">
+                <input id="name" type="text" class="validate" name="name" required>
                 <label class='active' for="name">Name (required)</label>
-                <input id="photo" type="text" class="validate" required>
+                <input id="photo" type="text" class="validate" name="photo">
                 <label class='active' for="name">Link to Photo Image (required)</label>
                 <h5><strong>Question 1</strong></h5>
                 <p>I see myself as sociable, aproachable.</p>
-                <select data-placeholder="" class="browser-default" id="q1">
+                <select name="score" data-placeholder="" class="browser-default" id="q1">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -33,7 +40,7 @@
                 </select>
                 <h5><strong>Question 2</strong></h5>
                 <p>I see myself as fault-finding, argumentative.</p>
-                <select data-placeholder="" class="browser-default" id="q2">
+                <select name="score" data-placeholder="" class="browser-default" id="q2">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -43,7 +50,7 @@
                 </select>
                 <h5><strong>Question 3</strong></h5>
                 <p>I see myself as trustworthy, self-disciplined.</p>
-                <select data-placeholder="" class="browser-default" id="q3">
+                <select name="score" data-placeholder="" class="browser-default" id="q3">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -53,7 +60,7 @@
                 </select>
                 <h5><strong>Question 4</strong></h5>
                 <p>I see myself as uneasy, sensitive.</p>
-                <select data-placeholder="" class="browser-default" id="q4">
+                <select name="score" data-placeholder="" class="browser-default" id="q4">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -63,7 +70,7 @@
                 </select>
                 <h5><strong>Question 5</strong></h5>
                 <p>I see myself as open minded.</p>
-                <select data-placeholder="" class="browser-default" id="q5">
+                <select name="score" data-placeholder="" class="browser-default" id="q5">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -73,7 +80,7 @@
                 </select>
                 <h5><strong>Question 6</strong></h5>
                 <p>I see myself as private, silent</p>
-                <select data-placeholder="" class="browser-default" id="q6">
+                <select name="score" data-placeholder="" class="browser-default" id="q6">
                     <option value="">Choose an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -83,7 +90,7 @@
                 </select>
                 <h5><strong>Question 7</strong></h5>
                 <p>I see myself as agreeable.</p>
-                <select data-placeholder="" class="browser-default" id="q7">
+                <select name="score" data-placeholder="" class="browser-default" id="q7">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -93,7 +100,7 @@
                 </select>
                 <h5><strong>Question 8</strong></h5>
                 <p>I see myself as topsy-turvy.</p>
-                <select data-placeholder="" class="browser-default" id="q8">
+                <select name="score" data-placeholder="" class="browser-default" id="q8">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -103,7 +110,7 @@
                 </select>
                 <h5><strong>Question 9</strong></h5>
                 <p>I see myself as together, cognizant .</p>
-                <select data-placeholder="" class="browser-default" id="q9">
+                <select name="score" data-placeholder="" class="browser-default" id="q9">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -113,7 +120,7 @@
                 </select>
                 <h5><strong>Question 10</strong></h5>
                 <p>I see myself as realistic, traditional.</p>
-                <select data-placeholder="" class="browser-default" id="q10">
+                <select name="score" data-placeholder="" class="browser-default" id="q10">
                     <option value="">Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -121,6 +128,9 @@
                     <option value="4">4</option>
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
+                <br>
+                <input type="submit">
+        </form>
 
 </body>
 </html>
